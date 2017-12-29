@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SKY ANGEL</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<audio id="finished"><source src="sound/finish.mp3" style="visibility: hidden"></audio>
+<audio id="take_star"><source src="sound/star.mp3" style="visibility: hidden"></audio>
+<audio id="hit"><source src="sound/hit.mp3" style="visibility: hidden"></audio>
+	<center>
+		<div class="startGame">
+			<button id="btn_startGame">Start Game</button>
+			<button id="btn_howtoplay">How to Play</button>
+		</div>
+		<div id="content">
+			<div id="stars">
+				0
+			</div>
+			<div id="fuel">
+				10
+			</div>
+			<div id="timer">
+				00:00 
+			</div>
+			<div class="controls">
+					<a href="#" class="pause"><img src="img/pause.png" id="pause" width="20px;"></a>
+					<a href="#" class="volume"><img src="img/volume.png" id="volume" width="20px;"></a>
+					<a href="#" class="font"><img src="img/font.png" id="font" width="20px;"></a>
+				</div>
+			<div id="aircraft">
+				<div id="airplane"></div>
+				<div id="frfara"></div>
+			</div>
+
+			<div id="clouds1"></div>
+			<div id="clouds2"></div>
+			<div id="clouds3"></div>
+		</div>
+		<div id="gameover">
+			<h3 id="gmov" style="color: white;padding-top: 100px;padding-left: 15px">GAME OVER !</h3>
+			<div id="scoreForm">
+				<input type="text" name="name" placeholder="Tapez votre nom">&nbsp;<button type="button" id="saveScore" disabled="1">Continue</button>
+			</div><br/>
+			<div id="scoreTable">
+			<table>		
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+			<br/>
+			<button id="btn_restartGame">Start Game</button>
+		</div><br/>
+		<div id="howtoplay">
+			<h1 style="color: #f2b451;">How to Play</h1>
+			<table>
+				<tr>
+					<td style="font-size: 20pt" id="msg1"></td>
+					<td>
+						<div class="airplane">
+							<img src="img/airplane.png" width="80px">
+							<img src="img/frfara.png" width="5px" id="frfara2" style="left: -5px;top:-9px">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" >
+						<img src="img/play.png" id="play-icon" style="display: none;">&nbsp;<img src="img/pause.png" id="pause-icon" width="32px" style="display: none;">&nbsp;&nbsp;<label style="font-size: 20pt;" id="msg2"></label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<img src="img/volume.png" id="volume-icon" style="display: none;">&nbsp;<img src="img/mute.png" id="mute-icon" width="32px" style="display: none;">&nbsp;&nbsp;<label style="font-size: 20pt;" id="msg3"></label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<img src="img/font.png" id="font-icon" style="display: none;">&nbsp;&nbsp;<label style="font-size: 20pt;" id="msg4"></label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<img src="img/fuel.png" width="32px" id="fuel-icon" style="display: none;">&nbsp;&nbsp;<label style="font-size: 20pt;" id="msg5"></label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<img src="img/star-icon.png" id="star-icon" width="32px" style="display: none;">&nbsp;&nbsp;<label style="font-size: 20pt;" id="msg6"></label>
+					</td>
+				</tr>
+			</table><br/>
+			<button type="button" id="retour">Back</button>
+		</div>
+	</center>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-collision.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>

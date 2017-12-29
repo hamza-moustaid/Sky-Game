@@ -1,0 +1,256 @@
+body{
+	position: relative;
+	overflow:hidden;
+}
+.startGame{
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	background:url('../img/gameboard.png');
+}
+#gameover{
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	background-color: #303030;
+	background : url('../img/bg-gameover1.png');
+}
+#btn_startGame{
+	width: 217px;
+	height: 46px;
+	border: none;
+	font-size: 18pt;
+	padding-left: 25px;
+	padding-top: 5px;
+	background:url('../img/btn.png');
+	color: #71d1f7;
+	margin-top: 50%;
+	transform: scale(1);
+	transition-duration: 1s;
+
+}
+#btn_startGame:hover{
+	opacity: 0.8;
+	cursor: pointer;
+	background:url('../img/btn-active.png');
+	transform: scale(1.05);
+	transition-duration: 1s;
+	color: white;
+}
+#btn_restartGame{
+	width: 217px;
+	height: 46px;
+	font-size: 18pt;
+	padding-left: 25px;
+	padding-top: 5px;
+	color: #71d1f7;
+	border: none;
+	background:url('../img/btn.png');
+}
+#btn_restartGame:hover{
+	opacity: 0.7;
+	cursor: pointer;
+	background:url('../img/btn-active.png');
+	color: white;
+}
+#content{
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	background: url("../img/bg.png") no-repeat;
+}
+#stars{
+	position: absolute;
+	font-size: 24pt;
+	font-weight: bold;
+	left: 85px;
+	top: 35px;
+}
+#fuel{
+	position: absolute;
+	font-size: 24pt;
+	font-weight: bold;
+	left: 170px;
+	top: 35px;
+}
+#timer{
+	float: right;
+	position: relative;
+	font-size: 24pt;
+	font-weight: bold;
+	left: -30px;
+	top: 35px;
+}
+#airplane{
+	position: absolute;
+	background: url('../img/airplane.png') no-repeat;
+	width: 130px;
+	height: 65px;
+	top: 300px;
+}
+#aircraft{
+	position: relative;
+	z-index: 10;
+}
+#frfara{
+	position: absolute;
+	background: url('../img/frfara.png') no-repeat;
+	width: 10px;
+	height: 53px;
+	top: 300px;
+	left: 130px;
+}
+.parachut{
+	float: right;
+	position: absolute;
+}
+.stars{
+	float: right;
+	position: absolute;
+}
+.birds{
+	float: right;
+	position: absolute;
+}
+.controls{
+	float: right;
+	position: relative;
+	left: 22px;
+	top: 85px;
+}
+#clouds1{
+	position: absolute;
+	background: url('../img/clouds.png');
+	width: 100%;
+	height: 217px;
+	top: 500px;
+	opacity: 0.5;
+	background-size: 800px;
+	z-index: 2;
+}
+#clouds2{
+	position: absolute;
+	background: url('../img/clouds.png');
+	width: 100%;
+	height: 217px;
+	top: 400px;
+	opacity: 0.5;
+	z-index: 2;
+
+}
+#clouds3{
+	position: absolute;
+	background: url('../img/clouds.png');
+	width: 100%;
+	height: 217px;
+	top: 300px;
+	opacity: 0.5;
+	background-size: 1200px;
+	z-index: 2;
+}
+#gameover table{
+	max-width: 620px;
+	margin-left: -60px;
+}
+#gameover table tr{
+	color: white;
+}
+#gameover table tr td{
+	font-size: 14pt;
+    text-align: center;
+    padding-left: 125px;
+    font-weight: bold;
+}
+input[name='name']{
+	width: 200px;
+	height: 35px;
+	border: none;
+	text-align: center;
+}
+#saveScore{
+	height: 40px;
+	width: 90px;
+	border: none;
+	background-color: #337ab7;
+	color: white;
+}
+#saveScore:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+#btn_howtoplay{
+	width: 217px;
+	height: 46px;
+	font-size: 18pt;
+	padding-left: 25px;
+	padding-top: 5px;
+	border: none;
+	background:url('../img/btn.png');
+	color: #71d1f7;
+	transform: scale(1);
+	transition-duration: 1s;
+}
+#btn_howtoplay:hover{
+	opacity: 0.8;
+	cursor: pointer;
+	color: white;
+	transform: scale(1.05);
+	transition-duration: 1s;
+	background:url('../img/btn-active.png');
+}
+#howtoplay{
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	background-color: #303030;
+	padding-top: 100px;
+	background: url("../img/bgvide.png") no-repeat;
+	display: none;
+}
+#howtoplay table tr td{
+	padding: 20px;
+}
+#howtoplay table{
+	border-radius: 10px;
+	border:none;
+	padding: 10px
+}
+#howtoplay .airplane{
+	animation-name: airplane;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.airplane{
+	position: relative;
+	display: none;
+}
+.airplane img{
+	position: relative;
+}
+#retour{
+	width: 200px;
+	height: 35px;
+	border: none;
+	background-color: white;
+	color: #f2b451;
+	display: none;
+}
+#retour:hover{
+	opacity: 0.9;
+	cursor: pointer;
+	background-color: #f2b451;
+	color: white;
+}
+
+#timePlayed{
+	position: absolute;
+	color: white;
+}
+
+#scoreTable{
+	width: 690px;
+    height: 330px;
+    margin-top: 120px;
+    overflow: auto;
+}
